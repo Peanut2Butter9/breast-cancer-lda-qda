@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data downloaded locally (the notebook loads WDBC from scikit-learn)
+*.csv
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
