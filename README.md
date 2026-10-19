@@ -98,7 +98,7 @@ The models are evaluated with accuracy, sensitivity (malignant recall), specific
 ## Running it
 
 ```bash
-git clone https://github.com/<your-username>/breast-cancer-lda-qda.git
+git clone https://github.com/Peanut2Butter9/breast-cancer-lda-qda.git
 ```
 
 ```bash
