@@ -2,7 +2,7 @@
 
 Classifying breast tumour cells as **malignant** or **benign** with **Linear Discriminant Analysis (LDA)** and **Quadratic Discriminant Analysis (QDA)**, using cell-nucleus measurements from the Wisconsin Diagnostic Breast Cancer (WDBC) dataset.
 
-This was the Group 7 project for *Introduction to Mathematical Modelling* in the Undergraduate Program in Mathematics at Universitas Gadjah Mada (UGM).
+This was the Group 7 project for *Introduction to Mathematical Modelling*, 2024 in the Undergraduate Program in Mathematics at Universitas Gadjah Mada (UGM).
 
 <p align="center">
   <img src="figures/roc_curves.png" width="420" alt="ROC curves for LDA and QDA">
