@@ -2,7 +2,7 @@
 
 Classifying breast tumour cells as **malignant** or **benign** with **Linear Discriminant Analysis (LDA)** and **Quadratic Discriminant Analysis (QDA)**, using cell-nucleus measurements from the Wisconsin Diagnostic Breast Cancer (WDBC) dataset.
 
-This was the Group 7 project for *Introduction to Mathematical Modelling*, 2024 in the Undergraduate Program in Mathematics at Universitas Gadjah Mada (UGM).
+This was the Group 7 (reproduced version) project for *Introduction to Mathematical Modelling*, 2024 in the Undergraduate Program in Mathematics at Universitas Gadjah Mada (UGM).
 
 <p align="center">
   <img src="figures/roc_curves.png" width="420" alt="ROC curves for LDA and QDA">
@@ -115,7 +115,7 @@ jupyter notebook notebooks/breast_cancer_lda_qda.ipynb
 
 Running the notebook regenerates every figure in `figures/`.
 
-## Limitations and what I'd do differently
+## Limitations and what's differ to older version 
 
 - **The threshold was chosen on the test set.** The 0.265 threshold was picked by inspecting the test-set ROC curve, so the test metrics for the tuned model are optimistic. A cleaner approach is to choose the threshold with cross-validation on the training data only.
 - **The "validation" step reused training data.** The final step of the original project predicts on a 25% subset of the training set. The model had already seen those samples, so the step only shows the predicted class proportions (40 of 107 predicted malignant, 37.4%). It does not measure generalisation. The cross-validation addendum is the better estimate.
@@ -125,7 +125,7 @@ Running the notebook regenerates every figure in `figures/`.
 
 ## Notes on the original report
 
-The PDF in [`report/`](report/) is the version submitted for the course. While rebuilding the notebook, I found a few inconsistencies between the report and the code. The code and this README are correct.
+The PDF in [`report/`](report/) is the version submitted for the course. While reproducing the notebook, I found a few differences between the report and the code. The code and this README are correct.
 
 - **Section 4.2 swaps the two LDA results.** In the report, the default threshold of 0.5 is shown with 92.3% accuracy and the tuned 0.265 threshold with 93.7%. It is the other way around. The tuned threshold gives **higher sensitivity and lower accuracy**, as the table above shows.
 - **Section 3.3.2 says two features were dropped.** It states that `texture_mean` and `smoothness_mean` were removed for having a correlation below 0.1. In fact their correlations are 0.42 and 0.36, and the notebook trains on all 8 features.
